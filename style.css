@@ -16,23 +16,21 @@
     object-fit: cover;
 }
 
-/* Estilo para el contenido */
-.content {
-    position: relative;
-    z-index: 1;
-}
-
 /* Estilos de encabezado */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0; /* Reducir el espacio vertical en el encabezado */
+    padding: 10px 0;
     position: fixed;
     width: 100%;
+    top: 0; /* Posicionar el encabezado en la parte superior */
     z-index: 1000;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 18px; /* Ajustar el tamaño de la fuente del encabezado */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    margin-top: 50px; /* Margen superior para desplazar el contenido debajo del encabezado */
 }
 
 /* Estilos de logo */
