@@ -16,10 +16,6 @@ body {
     padding: 20px;
 }
 
-.section {
-    padding: 50px 0;
-}
-
 /* Estilos de encabezado */
 header {
     background-color: #333;
@@ -58,98 +54,14 @@ nav ul li a:hover {
     color: #ff6600;
 }
 
-/* Estilos de secciones */
-.video-container {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Estilos de logo */
+.logo-container img {
+    width: 80px; /* Ajusta el tamaño del logo según sea necesario */
     height: auto;
-    transition: opacity 0.3s;
-}
-
-.video-container:hover video {
-    opacity: 0.8; /* Reduce la opacidad al pasar el ratón */
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-/* Estilos de imágenes */
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-/* Estilos de formulario y botón */
-.calculator {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-/* Estilos de pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Estilos de enlaces */
-a {
-    color: #007bff; /* Color de enlace estándar */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #0056b3; /* Color de enlace al pasar el ratón */
+    transition: transform 0.3s;
 }
 
 /* Estilos adicionales al hacer scroll */
-section.in-view .content h2,
-section.in-view .content p,
-section.in-view .image-container img,
-section.in-view .calculator {
-    opacity: 1;
-    transform: translateY(0);
+header.sticky .logo-container img {
+    width: 60px; /* Reducir el tamaño del logo al hacer scroll */
 }
