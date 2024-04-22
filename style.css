@@ -71,8 +71,7 @@ nav ul li a:hover {
 /* Estilos para el contenido principal */
 main {
     padding: 20px;
-    margin-top: 50px; /* Agregar un margen superior para desplazar el contenido hacia abajo */
-}
+} 
 
 /* Estilos para el formulario */
 .input-container {
