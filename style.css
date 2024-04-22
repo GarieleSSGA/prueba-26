@@ -23,14 +23,14 @@ header {
     padding: 10px 0;
     position: fixed;
     width: 100%;
-    top: 0; /* Posicionar el encabezado en la parte superior */
+    top: 0;
     z-index: 1000;
 }
 
 /* Estilos para el contenido principal */
 main {
     padding: 20px;
-    margin-top: 50px; /* Margen superior para desplazar el contenido debajo del encabezado */
+    margin-top: 70px; /* Ajusta este valor según sea necesario */
 }
 
 /* Estilos de logo */
@@ -108,5 +108,5 @@ button:hover {
 
 /* Estilos para el espacio vacío */
 .espacio-vacio {
-    height: 100px; /* Altura del espacio vacío */
+    height: 200px; /* Altura del espacio vacío */
 }
