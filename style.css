@@ -1,13 +1,92 @@
-/* Aquí va el CSS proporcionado anteriormente */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Tipo de letra moderno */
+    background-color: #111; /* Fondo oscuro */
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000; /* Negro */
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff; /* Texto blanco */
+    transition: color 0.3s ease; /* Transición de color de texto */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición de color de enlace */
+}
+
+nav ul li a:hover {
+    color: #e50914; /* Vino tinto */
+}
+
+main {
+    padding: 50px 0;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #000; /* Negro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #fff;
+    margin-right: 10px;
+    transition: color 0.3s ease; /* Transición de color de enlace de redes sociales */
+}
+
+.social-link:hover {
+    color: #e50914; /* Vino tinto */
+}
 
 /* Estilos adicionales para la calculadora */
 #momentForm {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #222; /* Fondo oscuro */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
 #momentForm .form-group {
@@ -17,13 +96,17 @@
 #momentForm label {
     display: block;
     margin-bottom: 5px;
+    color: #fff; /* Texto blanco */
 }
 
 #momentForm input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Borde gris oscuro */
     border-radius: 5px;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
 }
 
 #momentForm button {
@@ -35,7 +118,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición de color */
+    transition: background-color 0.3s ease; /* Transición de color de fondo del botón */
 }
 
 #momentForm button:hover {
@@ -44,4 +127,6 @@
 
 #result {
     margin-top: 20px;
+    color: #fff; /* Texto blanco */
+    font-size: 18px;
 }
