@@ -7,112 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-         <div class="container">
-        <div class="logo-container">
-            <img src="White Modern Professional Zoom Virtual Background (1).png" alt="Logo del Grupo de Matemática 3">
+    <div class="video-container">
+        <video id="video-background" autoplay loop muted>
+            <source src="White Modern Professional Zoom Virtual Background.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="content">
+            <header>
+                <div class="container">
+                    <div class="logo-container">
+                        <img src="White Modern Professional Zoom Virtual Background (1).png" alt="UCV Logo">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#momento-flector">Momento Flector</a></li>
+                            <!-- Agrega más enlaces según sea necesario -->
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <!-- Aquí va el contenido de la página -->
+            <main>
+                <h1>Calculadora de Resistencia de Materiales (grupo 3)</h1>
+                <div class="input-container">
+                    <label for="longitud">Longitud de la viga (m):</label>
+                    <input type="number" id="longitud" min="0">
+                </div>
+                <div class="input-container">
+                    <label for="fuerza">Fuerza aplicada (N):</label>
+                    <input type="number" id="fuerza" min="0">
+                </div>
+                <div class="input-container">
+                    <label for="tipo-carga">Tipo de carga:</label>
+                    <select id="tipo-carga">
+                        <option value="concentrada">Carga Concentrada</option>
+                        <option value="distribuida">Carga Distribuida Uniformemente</option>
+                    </select>
+                </div>
+                <button onclick="calcular()">Calcular</button>
+                <div id="resultado" class="resultado"></div>
+            </main>
         </div>
-        <h1>Grupo de Matemática 3</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#momento-flector">Momento Flector</a></li>
-                <li><a href="#calculadora">Calculadora de Resistencia de Materiales</a></li>
-                <li><a href="#recursos">Recursos</a></li>
-                <!-- Agregar más elementos de navegación según sea necesario -->
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="inicio" class="section">
-            <div class="video-container">
-                <video autoplay loop muted>
-                    <source src="White Modern Professional Zoom Virtual Background.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <div class="content">
-                    <h2>Bienvenidos a Grupo de Matemática 3</h2>
-                    <p>Somos un grupo de estudiantes y profesionales apasionados por la ingeniería civil...</p>
-                    <p>Explora nuestro sitio para descubrir contenido educativo, herramientas útiles y más.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="momento-flector" class="section">
-            <div class="container">
-                <h2>Momento Flector</h2>
-                <p>En ingeniería civil, el momento flector es un concepto fundamental...</p>
-                <p>Se define como la fuerza de flexión que actúa sobre un elemento estructural...</p>
-                <div class="image-container">
-                    <img src="Diseño sin título (6).png" alt="Imagen de momento flector">
-                </div>
-                <!-- Más contenido sobre momento flector -->
-            </div>
-        </section>
-
-        <section id="calculadora" class="section">
-            <div class="container">
-                <h2>Calculadora de Resistencia de Materiales</h2>
-                <div class="calculator">
-                    <div class="input-container">
-                        <label for="longitud">Longitud de la viga (m):</label>
-                        <input type="number" id="longitud" min="0">
-                    </div>
-                    <div class="input-container">
-                        <label for="fuerza">Fuerza aplicada (N):</label>
-                        <input type="number" id="fuerza" min="0">
-                    </div>
-                    <div class="input-container">
-                        <label for="tipo-carga">Tipo de carga:</label>
-                        <select id="tipo-carga">
-                            <option value="concentrada">Carga Concentrada</option>
-                            <option value="distribuida">Carga Distribuida Uniformemente</option>
-                        </select>
-                    </div>
-                    <button onclick="calcular()">Calcular</button>
-                    <div id="resultado" class="resultado"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="subtema-1" class="section">
-            <div class="container">
-                <h2>Subtema 1</h2>
-                <p>Explicación breve sobre el subtema 1 de ingeniería civil...</p>
-                <p>Este es un ejemplo de contenido adicional con transición hacia la derecha.</p>
-                <!-- Más contenido -->
-            </div>
-        </section>
-
-        <section id="subtema-2" class="section">
-            <div class="container">
-                <h2>Subtema 2</h2>
-                <p>Explicación breve sobre el subtema 2 de ingeniería civil...</p>
-                <p>Otro ejemplo de contenido adicional con transición hacia la derecha.</p>
-                <!-- Más contenido -->
-            </div>
-        </section>
-
-        <!-- Agregar más secciones y subtemas según sea necesario -->
-
-        <section id="recursos" class="section">
-            <div class="container">
-                <h2>Recursos</h2>
-                <ul>
-                    <li><a href="https://www.example.com">Enlace 1</a></li>
-                    <li><a href="https://www.example.com">Enlace 2</a></li>
-                    <li><a href="https://www.example.com">Enlace 3</a></li>
-                    <!-- Agregar más enlaces útiles -->
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Grupo de Matemática 3</p>
-    </footer>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
