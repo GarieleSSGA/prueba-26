@@ -1,5 +1,3 @@
-// script.js
-
 function calculateMoment() {
     // Obtener los valores de longitud de la viga y carga aplicada
     var span = parseFloat(document.getElementById("span").value);

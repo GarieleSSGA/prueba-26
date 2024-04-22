@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web - Ingeniería Civil</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calculator.css">
+    <title>Los Ingenieros de la UCV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="White Modern Professional Zoom Virtual Background (1).png" alt="Logo de Ingeniería Civil">
-            </div>
+            <h1>Los Ingenieros de la UCV</h1>
             <nav>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -20,7 +17,6 @@
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#equipo">Equipo</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="calculator.html">Calculadora de Momento Flector</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,8 +25,9 @@
     <main>
         <section id="inicio" class="section">
             <div class="container">
-                <h2>Bienvenido a nuestra página de Ingeniería Civil</h2>
-                <p>Somos un equipo de ingenieros civiles comprometidos con la excelencia en el diseño, construcción y mantenimiento de infraestructuras.</p>
+                <h2>Bienvenido a Los Ingenieros de la UCV</h2>
+                <p>Somos un equipo de ingenieros apasionados comprometidos con la excelencia y la innovación en todos nuestros proyectos.</p>
+                <a href="#servicios" class="btn">Descubre más</a>
             </div>
         </section>
 
@@ -47,82 +44,35 @@
                     <h3>Servicio 2</h3>
                     <p>Descripción del servicio 2.</p>
                 </div>
-                <div class="service">
-                    <img src="service3.jpg" alt="Servicio 3">
-                    <h3>Servicio 3</h3>
-                    <p>Descripción del servicio 3.</p>
-                </div>
+                <!-- Agregar más servicios según sea necesario -->
             </div>
         </section>
 
-        <section id="proyectos" class="section">
+        <section id="calculadora" class="section">
             <div class="container">
-                <h2>Nuestros Proyectos</h2>
-                <div class="project">
-                    <img src="Diseño sin título (6).png" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del proyecto 1.</p>
-                </div>
-                <div class="project">
-                    <img src="Diseño sin título (7).png" alt="Proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción del proyecto 2.</p>
-                </div>
-                <div class="project">
-                    <img src="project3.jpg" alt="Proyecto 3">
-                    <h3>Proyecto 3</h3>
-                    <p>Descripción del proyecto 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="equipo" class="section">
-            <div class="container">
-                <h2>Nuestro Equipo</h2>
-                <div class="team-member">
-                    <img src="team1.jpg" alt="Miembro del equipo 1">
-                    <h3>Nombre del Miembro 1</h3>
-                    <p>Cargo y descripción del miembro 1.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team2.jpg" alt="Miembro del equipo 2">
-                    <h3>Nombre del Miembro 2</h3>
-                    <p>Cargo y descripción del miembro 2.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team3.jpg" alt="Miembro del equipo 3">
-                    <h3>Nombre del Miembro 3</h3>
-                    <p>Cargo y descripción del miembro 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="section">
-            <div class="container">
-                <h2>Contacto</h2>
-                <form id="contact-form">
+                <h2>Calculadora de Momento Flector</h2>
+                <form id="momentForm">
                     <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" required>
+                        <label for="span">Longitud de la viga (m):</label>
+                        <input type="text" id="span" placeholder="Ingrese la longitud">
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" required>
+                        <label for="load">Carga aplicada (N):</label>
+                        <input type="text" id="load" placeholder="Ingrese la carga">
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    <button type="submit">Enviar Mensaje</button>
+                    <button type="button" onclick="calculateMoment()">Calcular Momento Flector</button>
                 </form>
+                <div id="result"></div>
             </div>
         </section>
+
+        <!-- Secciones de Proyectos, Equipo, Contacto y cualquier otra sección adicional -->
 
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ingeniería Civil. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Los Ingenieros de la UCV. Todos los derechos reservados.</p>
             <div class="social-links">
                 <a href="#" class="social-link">Facebook</a>
                 <a href="#" class="social-link">Twitter</a>
