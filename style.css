@@ -108,3 +108,8 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
 }
+
+/* Estilos para el espacio vacío */
+.espacio-vacio {
+    height: 100px; /* Altura del espacio vacío */
+}
