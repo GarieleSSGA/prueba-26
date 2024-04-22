@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería Civil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ingeniería Civil</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a nuestra página de Ingeniería Civil</h2>
+            <p>Somos un equipo de ingenieros civiles comprometidos con la excelencia en el diseño, construcción y mantenimiento de infraestructuras.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Diseño estructural</li>
+                <li>Construcción de edificaciones</li>
+                <li>Planificación urbana</li>
+                <li>Gestión de proyectos</li>
+                <li>Consultoría en ingeniería civil</li>
+            </ul>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Edificio Residencial</h3>
+                <p>Diseño y construcción de un edificio de apartamentos de lujo en el centro de la ciudad.</p>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Puente Colgante</h3>
+                <p>Construcción de un puente colgante sobre un río para mejorar la conectividad entre dos comunidades.</p>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información sobre nuestros servicios o para solicitar una consulta, contáctenos:</p>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ingeniería Civil. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
