@@ -1,37 +1,46 @@
-/* Reset de estilos */
-* {
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', Arial, sans-serif; /* Tipo de letra moderno */
-    background-color: #111; /* Fondo oscuro */
-    color: #fff;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    line-height: 1.6; /* Espaciado entre líneas para una mejor legibilidad */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
+.section {
+    padding: 50px 0;
+}
+
+/* Estilos de encabezado */
 header {
-    background-color: #000; /* Negro */
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
-    text-align: center;
-    transition: background-color 0.3s ease; /* Transición de color de fondo */
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-header h1 {
-    font-size: 36px;
-    color: #fff; /* Texto blanco */
-    transition: color 0.3s ease; /* Transición de color de texto */
+/* Estilos de navegación */
+nav {
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -42,98 +51,105 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición de color de enlace */
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #e50914; /* Vino tinto */
+    color: #ff6600;
 }
 
-main {
-    padding: 50px 0;
+/* Estilos de secciones */
+.video-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.section {
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.video-container:hover video {
+    opacity: 0.8; /* Reduce la opacidad al pasar el ratón */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 50px 0;
 }
 
-footer {
-    background-color: #000; /* Negro */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-.social-links {
-    margin-top: 20px;
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-.social-link {
-    color: #fff;
-    margin-right: 10px;
-    transition: color 0.3s ease; /* Transición de color de enlace de redes sociales */
+/* Estilos de imágenes */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-.social-link:hover {
-    color: #e50914; /* Vino tinto */
-}
-
-/* Estilos adicionales para la calculadora */
-#momentForm {
-    max-width: 500px;
+/* Estilos de formulario y botón */
+.calculator {
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #222; /* Fondo oscuro */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-#momentForm .form-group {
-    margin-bottom: 20px;
-}
-
-#momentForm label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff; /* Texto blanco */
-}
-
-#momentForm input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #555; /* Borde gris oscuro */
-    border-radius: 5px;
-    background-color: #333; /* Fondo gris oscuro */
-    color: #fff; /* Texto blanco */
-    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
-}
-
-#momentForm button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #e50914; /* Vino tinto */
+/* Estilos de pie de página */
+footer {
+    background-color: #333;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición de color de fondo del botón */
+    text-align: center;
+    padding: 20px 0;
 }
 
-#momentForm button:hover {
-    background-color: #ff525d; /* Vino tinto más claro al pasar el mouse */
+/* Estilos de enlaces */
+a {
+    color: #007bff; /* Color de enlace estándar */
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-#result {
-    margin-top: 20px;
-    color: #fff; /* Texto blanco */
-    font-size: 18px;
+a:hover {
+    color: #0056b3; /* Color de enlace al pasar el ratón */
 }
 
-/* Ajuste de tamaño de imagen */
-img {
-    max-width: 100%; /* La imagen no será más grande que su contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
+/* Estilos adicionales al hacer scroll */
+section.in-view .content h2,
+section.in-view .content p,
+section.in-view .image-container img,
+section.in-view .calculator {
+    opacity: 1;
+    transform: translateY(0);
 }
-
