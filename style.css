@@ -130,3 +130,10 @@ footer {
     color: #fff; /* Texto blanco */
     font-size: 18px;
 }
+
+/* Ajuste de tamaño de imagen */
+img {
+    max-width: 100%; /* La imagen no será más grande que su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
